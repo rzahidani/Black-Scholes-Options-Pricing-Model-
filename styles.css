@@ -1,0 +1,51 @@
+/*CSS for styling the website*/ 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #004085;
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input,
+select,
+button {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #004085;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+h2 {
+  text-align: center;
+}
+
+

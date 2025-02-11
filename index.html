@@ -1,0 +1,34 @@
+<!-- Main WebPage (Frontend)-->
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title> Black-Scholes Calculator </title>
+    <link rel="stylesheet" href = "{{ url_for('static', filename='styles.css') }}"> 
+</head>
+<body> 
+    <h1> Black-Scholes Option Pricing Calculator </h1>
+    <form method="POST"> 
+        <label> Stock Ticker: <input type = "text" name = "ticker" required></label>
+        <label> Strike Price (K): <input type = "number" name = "strike" required></label>
+        <label> Time to Expiry (Years): <input type = "number" step = "0.01" name = "time" required></label>
+        <label> Risk-Free Rate (r): <input type = "number" step = "0.01" name = "time" required></label>
+        <label> Option Type: 
+            <select name = "option_type"> 
+                <option value = "call"> Call </option>
+                <option value = "put"> Put </option>
+            </select>
+        </label>
+        <button type = "submit"> Calculate </button>
+    </form>
+
+    {% if error_message %}
+       <p style="color:red; text-align:center;">{{ error_message }}</p>
+   {% endif %}
+
+    {% if option_price %}
+        <h2> Option Price: ${{ option_price }}</h2>
+    {% endif %}
+</body>
+</html>
