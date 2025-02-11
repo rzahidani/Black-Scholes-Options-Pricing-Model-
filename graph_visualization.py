@@ -6,7 +6,7 @@ from black_scholes_formula import black_scholes
 def plot_option_prices(S, K, T, r, vol): 
     ''' 
     What this line of  code below is saying that assuming the underlying options contract 
-    is being traded around 100 points, the option peirce range will be set at 80, 90, 100, 
+    is being traded around 100 points, the option price range will be set at 80, 90, 100, 
     110, and 120. Basically what this means is that the price rule dictates a 10 point interval and 40 point 
     range around the given value / median. This range is necessary because it is able to capture a 
     reasonable spectrum of potential price movements for the underlying assets (provides a view of both upside 
