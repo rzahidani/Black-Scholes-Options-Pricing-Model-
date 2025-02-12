@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request 
-from black_scholes_formula import black_scholes 
+from black_scholes import black_scholes 
 from fetch_data import get_stock_data 
 ''' Flask allows developers to create web applications with just some lines of code: 
     - allows interface with web servers 
