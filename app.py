@@ -24,7 +24,7 @@ def index():
             r = float(request.form["rate"]) 
             option_type = request.form["option_type"]
 
-            option_price = black_scholes_formula(S, K, T, r, vol, option_type) 
+            option_price = black_scholes(S, K, T, r, vol, option_type) 
         except Exception as e: 
             error_message = str(e) 
         return render_template("index.html", option_price = option_price)
