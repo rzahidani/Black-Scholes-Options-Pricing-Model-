@@ -1,7 +1,7 @@
 # Generates graphs for visualization 
 import numpy as np 
 import matplotlib.pyplot as plt 
-from black_scholes_formula import black_scholes 
+from black_scholes import black_scholes 
 
 def plot_option_prices(S, K, T, r, vol): 
     ''' 
