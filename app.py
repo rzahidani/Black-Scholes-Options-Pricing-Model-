@@ -27,7 +27,8 @@ def index():
             option_price = black_scholes(S, K, T, r, vol, option_type) 
         except Exception as e: 
             error_message = str(e) 
-        return render_template("index.html", option_price = option_price)
+    
+    return render_template("index.html", option_price = option_price, error_message=error_message)
     
     ''' 
         Checks if the script is being run directly and when a Python script is executed directly, Python sets the special variable 
